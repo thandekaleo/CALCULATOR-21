@@ -40,3 +40,25 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Build artifacts
+dist/
+build/
+
+# Angular CLI cache
+.angular/
+
+# Package managers
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/settings.json
