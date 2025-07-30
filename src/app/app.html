@@ -6,6 +6,7 @@
   <div class="calculator-body">
     <!-- Display -->
     <div class="display">
+      <div class="equation-display">{{ equation() || '' }}</div>
       <input type="text" [value]="display()" readonly class="display-input" />
     </div>
     
@@ -42,5 +43,8 @@
     </div>
   </div>
 </div>
+
+<!-- Test Suite Component -->
+<app-calculator-tester></app-calculator-tester>
 
 

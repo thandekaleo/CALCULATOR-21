@@ -12,10 +12,14 @@ A modern, responsive calculator application built with Angular 20 (latest versio
 - ✅ **Decimal Support**: Handle decimal numbers and calculations
 - ✅ **Clear Functions**: Full clear (C) and clear entry (CE)
 - ✅ **Backspace**: Remove last entered digit
+- ✅ **Equation Display**: Shows the full calculation as you type
+- ✅ **Click Sound Effects**: Auditory feedback for button presses
 - ✅ **Responsive Design**: Works on desktop and mobile devices
 - ✅ **Modern UI**: Gradient buttons with hover effects and animations
 - ✅ **Keyboard Support**: Accessible design with focus states
 - ✅ **Error Handling**: Proper input validation and error management
+- ✅ **Built-in Test Suite**: Comprehensive testing interface for UI validation
+- ✅ **Mock Services**: Advanced testing scenarios including edge cases
 
 ## 🛠️ Technology Stack
 
@@ -30,6 +34,12 @@ A modern, responsive calculator application built with Angular 20 (latest versio
 ```
 src/
 ├── app/
+│   ├── components/
+│   │   ├── calculator-tester.component.ts  # Built-in test runner
+│   │   └── test-runner.component.ts        # Advanced test interface
+│   ├── services/
+│   │   ├── calculator.service.ts           # Core calculation logic
+│   │   └── mock-calculator.service.ts      # Mock service for testing
 │   ├── app.ts              # Main component with calculator logic
 │   ├── app.html            # Calculator template
 │   ├── app.css             # Component styling
@@ -110,6 +120,7 @@ ng serve --port 4201
 - Button hover effects with elevation
 - Press animations with scale transform
 - Smooth transitions for all interactions
+- **Click sound effects** with Web Audio API for tactile feedback
 
 ### Responsive Design
 - Mobile-friendly layout
@@ -118,6 +129,23 @@ ng serve --port 4201
 
 ## 🧪 Testing
 
+### Built-in Test Suite
+
+The calculator includes a comprehensive test suite that you can access directly in the browser:
+
+1. **Open the application** at `http://localhost:4201`
+2. **Click "Show Tests"** to reveal the test panel
+3. **Run individual tests** or the complete test suite
+4. **View real-time results** and detailed test output
+
+### Test Scenarios Include:
+- **Basic Operations**: Addition, subtraction, multiplication, division
+- **Decimal Calculations**: Floating-point arithmetic
+- **Error Handling**: Division by zero, invalid inputs
+- **Edge Cases**: Large numbers, negative results, precision issues
+- **Chain Operations**: Sequential calculations
+
+### Manual Testing
 Run the unit tests:
 ```bash
 ng test
